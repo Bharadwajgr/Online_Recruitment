@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="Default.aspx" title="Home"  description=" Hi !! Welcome  to jobs.com">
+        <siteMapNode url="seekers_login.aspx" title="Candidates Login"  description="">
+              <siteMapNode url="changpass_seekr.aspx" title="Password Change for Candidates"  description=""/>
+              <siteMapNode url="jseeker_postresume.aspx" title="Candidates Registration Form"  description=""/>
+        </siteMapNode>
+      
+        <siteMapNode url="emplogin.aspx" title="Companies Login"  description="" >
+              <siteMapNode url="changepass_comp.aspx" title="Password Change for Companies"  description=""/>
+              <siteMapNode url="emp_reg.aspx" title="Companies Registration Form"  description=""/>
+        </siteMapNode>
+      
+        <siteMapNode url="adminlogin.aspx" title="Administrators Login"  description="" >
+              <siteMapNode url="admin.aspx" title="Administrators Home page"  description="" >
+                    <siteMapNode url="companydetails.aspx" title="Companies Information"  description=""/>
+                    <siteMapNode url="jobseekrsinfo.aspx" title="Candidates Information"  description=""/>
+              </siteMapNode>
+        </siteMapNode> 
+      
+      
+         <siteMapNode url="" title="Services"  description="" >
+             <siteMapNode url="Carriercenter.aspx" title="Carrier center"  description="" />
+             <siteMapNode url="right_resume.aspx" title="guide to resume making"  description="" />
+             <siteMapNode url="lifeatwork.aspx" title="Life at work"  description="" />
+             <siteMapNode url="astrology.aspx" title="Astrology"  description="" />
+         </siteMapNode>
+
+        <siteMapNode url="aboutus.aspx" title="About us"  description="" />
+     
+      
+    </siteMapNode>
+</siteMap>

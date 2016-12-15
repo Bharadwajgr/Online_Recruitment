@@ -1,0 +1,1032 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0028)http://www.monsterindia.com/ -->
+<html><HEAD><TITLE>Monster - Jobs in India,Delhi,Mumbai,Bangalore,IT Jobs,Sales Jobs on Monster.com</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=UTF-8">
+<META content=NHG+3EkIJOyESmCcMsHKGgw/hcpBobFXE/ivNGMYZpw= name=verify-v1>
+<META 
+content="Find Jobs in India, Delhi, Bangalore, Mumbai, Chennai, Hyderabad. Apply For Jobs in IT,Sales, Call Center at Monster.com." 
+name=Description>
+<META 
+content="jobs in india, jobs in bangalore, jobs in delhi, jobs in hyderabad, jobs in mumbai, jobs in chennai, jobs in pune, call center jobs, jobs in marketing, it jobs, jobs in it, monster, monster.com, Monster India, MonsterIndia, monster jobs, MonsterIndia.com,resume,job sites,apply online jobs,software jobs,computer job,call centers jobs,bpo jobs,software testing jobs,delhi jobs" 
+name=Keywords>
+<META content="index, follow" name=robots>
+<SCRIPT language=javascript src="home_files/autocomplete.js"></SCRIPT>
+<LINK href="home_files/style.css" type=text/css rel=stylesheet>
+<SCRIPT>var Mons={};var MJS={};Mons.BASE_SERVER='monsterindia.com';try{document.execCommand("BackgroundImageCache",false,true);}catch(err){}</SCRIPT>
+
+<SCRIPT language=javascript src="home_files/basic-min-v1.js"></SCRIPT>
+
+<SCRIPT language=javascript>
+function openwin()
+{
+        window.open("","newin","width=700,height=500,left=0,top=0,toolbar=no,status=no,scrollbars=yes");
+}
+
+function validateSearchForm( frmObj )
+{
+    if ( frmObj.fts.value == 'Put Job Titles, Location, Company Name, Skills, Industry, etc.' )
+    {
+        frmObj.fts.value = '';
+		
+    }
+    else
+    {
+        if(frmObj.fts.value=='')
+        {
+        frmObj.fts.value = 'Put Job Titles, Location, Company Name, Skills, Industry, etc.';
+	    
+        }
+    }
+            return true;
+}
+
+function hiddenText(iid,value,classname)
+  {
+  
+     if ( document.getElementById(iid).value == 'Put Job Titles, Location, Company Name, Skills, Industry, etc.' )
+		{
+			document.getElementById(iid).value=value;
+			document.getElementById(iid).className=classname;
+		}
+  }
+
+  function displayText(iid,value,classname)
+  {
+    if(document.getElementById(iid).value =="")
+    {
+      document.getElementById(iid).value=value;
+      document.getElementById(iid).className=classname;
+    }
+  }
+
+
+
+
+function actionForm()
+{
+	if(document.frmSearchJobs.fts.value == 'Put Job Titles, Location, Company Name, Skills, Industry, etc.' || document.frmSearchJobs.fts.value == '')
+	{
+		//document.frmSearchJobs.action="http://jobsearch.monsterindia.com/category/index.html";
+		document.location.href = 'http://jobsearch.monsterindia.com/category/index.html';
+		return false;
+	}
+	document.frmSearchJobs.submit();
+}
+</SCRIPT>
+
+<SCRIPT>
+var tabs = [];
+tabs[tabs.length] = [''];
+vpLogoLoadedFlg = 0;
+blLogoLoadedFlg = 0;
+pcLogoLoadedFlg = 0;
+
+function eventOnSwitchTab (tab)
+{
+        //if (tabs[tab] && tabs[tab][0] && tabs[tab][0] == 'VP')
+		if ( tab == 1 && 0 )
+        {
+		
+                //switchTab(tab);
+                if ( vpLogoLoadedFlg == 0 )
+                {
+                        try {
+                        getVP_logo("view_count.html?comma_sep_ids_logo_lnk=&comma_sep_ids_txt_lnk=&type=VPLOGO","currentTab");
+                        }
+                        catch(e)
+                        {
+                                //alert(e);
+                        }
+                }
+                vpLogoLoadedFlg = 1;
+        }
+        //if (tabs[tab] && tabs[tab][0] && tabs[tab][0] == 'BL')
+        if ( tab == 2 && 0 )
+        {
+                //switchTab(tab);
+                if ( blLogoLoadedFlg == 0 )
+                {
+                        try {
+                        getVP_logo("view_count.html?comma_sep_ids_logo_lnk=&comma_sep_ids_txt_lnk=&type=BLLOGO","currentTab");
+                        }
+                        catch(e)
+                        {
+                                //alert(e);
+                        }
+                }
+                blLogoLoadedFlg = 1;
+        }
+
+        //if(tabs[tab] && tabs[tab][0] && tabs[tab][0] == 'PC')
+		if ( tab == 3 && 0 )
+        {
+                if (pcLogoLoadedFlg == 0 )
+                {
+                        try {
+						getVP_logo("view_count.html?comma_sep_ids_logo_lnk=&comma_sep_ids_txt_lnk=&type=PCLOGO","currentTab");
+						
+                        }
+                        catch(e)
+                        {
+                                //alert(e);
+                        }
+                }
+                pcLogoLoadedFlg = 1;
+        }
+        
+}
+
+/////////////////////////////////// For Video Profile /////////////////////////////////
+function getVP_logo(url,id_area)
+{
+  http_request = false;
+//  document.getElementById(id_area).innerHTML='<TD colspan="2" ALIGN="CENTER"><B>Please Wait..</B></TD> ';
+
+  if (window.XMLHttpRequest)
+  {
+   http_request = new XMLHttpRequest();
+   if (http_request.overrideMimeType)
+   {
+    http_request.overrideMimeType('text/xml');
+   }
+  }
+  else if (window.ActiveXObject)
+  { // IE
+   try
+   {
+    http_request = new ActiveXObject("Msxml2.XMLHTTP");
+   }
+   catch (e)
+   {
+    try
+    {
+     http_request = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    catch (e)
+    {
+    }
+   }
+  }
+  http_request.onreadystatechange = alertContents;
+  http_request.open('GET', url, true);
+  data = http_request.send(null);
+  
+  function alertContents()
+  {
+   if (http_request.readyState == 4)
+   {
+    if (http_request.status == 200)
+    {
+//     document.getElementById(id_area).innerHTML = http_request.responseText;
+    }
+    else
+    {
+     alert('There was a problem with the request.');
+    }
+   }
+  }
+}
+//////////////////////////////////////////////////////////////////////////////////
+
+</SCRIPT>
+
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY style="BACKGROUND-COLOR: #ffffff">
+<FORM name=frmSearchJobs onsubmit="javascript:return actionForm();" 
+action=http://jobsearch.monsterindia.com/searchresult.html method=get>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD class=bg_orange3><IMG height=8 src="home_files/trans.gif" 
+  width=1></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width=755 align=center border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top height=25>&nbsp;</TD>
+    <TD colSpan=2>&nbsp;</TD>
+    <TD class=border_orange 
+    style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px" height=19><A 
+      class=bold 
+      href="http://www.monsterindia.com/security/security_center.html">Security 
+      Center</A></TD></TR>
+  <TR>
+    <TD vAlign=top colSpan=4 height=10></TD>
+  <TR>
+    <TD vAlign=top width=551 height=545><IMG 
+      title="Monster India, Monster.com, Monster Jobs" 
+      src="home_files/logo_monster_trans.gif"><BR><BR><BR><BR><BR><BR><BR>
+      <TABLE style="MARGIN-BOTTOM: 5px" cellSpacing=0 cellPadding=0 width="100%" 
+      border=0>
+        <TBODY>
+        <TR>
+          <TD>
+            <DIV class="heading_5 txt_orange" 
+            style="FLOAT: left; WIDTH: auto">Search Jobs</DIV>
+            <DIV 
+            style="PADDING-RIGHT: 3px; PADDING-LEFT: 0px; FLOAT: right; PADDING-BOTTOM: 0px; WIDTH: auto; PADDING-TOP: 7px"><IMG 
+            src="home_files/pwd_by_mag_sch.gif"></DIV></TD>
+          <TD>&nbsp;</TD></TR>
+        <TR>
+          <TD width="9%"><INPUT class="txt_grey1 heading_2" id=fts_id 
+            onkeydown=displayList(event,this) 
+            onblur="displayText(this.id,'Put Job Titles, Location, Company Name, Skills, Industry, etc.','txt_grey1 heading_2')" 
+            style="PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px; HEIGHT: 25px" 
+            onfocus="hiddenText(this.id,'','heading_2')" size=65 
+            value="Put Job Titles, Location, Company Name, Skills, Industry, etc." 
+            name=fts autocomplete="off"> 
+            <DIV id=autocompletedata style="DISPLAY: none" 
+align=center></DIV></TD>
+          <TD width="2%">&nbsp;<INPUT type=hidden name=ac></TD>
+          <TD style="PADDING-LEFT: 5px" width="88%"><INPUT title=Go type=image 
+            height=25 width=58 src="home_files/go.gif" 
+        border=0></A></TD></TR></TBODY></TABLE><A title="Search Tips" 
+      href="http://www.monsterindia.com/search_tips.html">Tips</A> | <A 
+      title="Job Opportunity, Job Listings" 
+      href="http://jobsearch.monsterindia.com/search.html">Advanced 
+      Search</A><BR><BR><BR><BR><BR><BR>
+      <TABLE id=category cellSpacing=0 cellPadding=0 width="94%" border=0>
+        <TBODY>
+        <TR>
+          <TD class=border_orange 
+          style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px" 
+            width=9><IMG height=1 src="home_files/trans.gif" width=9></TD>
+          <TD class="border_orange bg_orange1" style="BORDER-BOTTOM: 0px" 
+          align=middle width=150 height=19>Jobs by Category </TD>
+          <TD class=border_orange 
+          style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px" 
+            width=9><IMG height=1 src="home_files/trans.gif" width=11></TD>
+          <TD class="border_orange bg_orange2" 
+          onmouseover="MJS.HTML.opsOnTags({SHOW_IDS:['location', 'location1'], HIDE_IDS:['category', 'category1']});" 
+          style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; CURSOR: pointer" 
+          align=middle width=164>Jobs by Location </TD>
+          <TD class=border_orange 
+          style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px">&nbsp;</TD></TR></TBODY></TABLE>
+      <TABLE id=location style="DISPLAY: none" cellSpacing=0 cellPadding=0 
+      width="94%" border=0>
+        <TBODY>
+        <TR>
+          <TD class=border_orange 
+          style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px" 
+            width=9><IMG height=1 src="home_files/trans.gif" width=9></TD>
+          <TD class="border_orange bg_orange2" 
+          onmouseover="MJS.HTML.opsOnTags({HIDE_IDS:['location', 'location1'], SHOW_IDS:['category', 'category1']});" 
+          style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; CURSOR: pointer" 
+          align=middle width=150 height=19>Jobs by Category </TD>
+          <TD class=border_orange 
+          style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px" 
+            width=9><IMG height=1 src="home_files/trans.gif" width=11></TD>
+          <TD class="border_orange bg_orange1" style="BORDER-BOTTOM: 0px" 
+          align=middle width=164>Jobs by Location </TD>
+          <TD class=border_orange 
+          style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px">&nbsp;</TD></TR></TBODY></TABLE>
+      <TABLE id=category1 cellSpacing=0 cellPadding=5 width="94%" border=0>
+        <TBODY>
+        <TR>
+          <TD class=bold 
+          style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; LINE-HEIGHT: 18px; PADDING-TOP: 0px" 
+          vAlign=top align=middle><IMG height=1 src="home_files/trans.gif" 
+            width=9></TD>
+          <TD class=bold style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 17px" 
+          vAlign=top noWrap width="33%"><A 
+            title="jobs in IT, IT jobs, IT jobs in india " 
+            href="http://jobsearch.monsterindia.com/category/it.html">IT</A><BR><A 
+            title="jobs in BPO &amp; Customer Service, BPO &amp; Customer Service jobs, BPO &amp; Customer Service jobs in india " 
+            href="http://jobsearch.monsterindia.com/category/bpo.html">BPO &amp; 
+            Customer Service</A></TD>
+          <TD class=bold style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 17px" 
+          vAlign=top noWrap width="33%"><A 
+            title="jobs in Finance &amp; Accounts, Finance &amp; Accounts jobs, Finance &amp; Accounts jobs in india " 
+            href="http://jobsearch.monsterindia.com/category/finance.html">Finance 
+            &amp; Accounts</A><BR><A 
+            title="jobs in Marketing, Marketing jobs, Marketing jobs in india " 
+            href="http://jobsearch.monsterindia.com/category/marketing.html">Marketing</A></TD>
+          <TD class=bold style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 17px" 
+          vAlign=top noWrap width="33%"><A 
+            title="jobs in Sales, Sales jobs, Sales jobs in india " 
+            href="http://jobsearch.monsterindia.com/category/sales.html">Sales</A><BR><A 
+            title="jobs in Production &amp; Engineering, Production &amp; Engineering jobs, Production &amp; Engineering jobs in india " 
+            href="http://jobsearch.monsterindia.com/category/production.html">Production 
+            &amp; Engineering</A></TD></TR>
+        <TR>
+          <TD class=bold 
+          style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; LINE-HEIGHT: 18px; PADDING-TOP: 0px" 
+          vAlign=top align=middle><IMG height=1 src="home_files/trans.gif" 
+            width=9></TD>
+          <TD style="LINE-HEIGHT: 17px" vAlign=top noWrap><A 
+            title="jobs in Advertising &amp; PR, Advertising &amp; PR jobs, software jobs in india, Advertising &amp; PR jobs in india " 
+            href="http://jobsearch.monsterindia.com/category/categories.html?id=1">Advertising 
+            &amp; PR</A><BR><A 
+            title="jobs in Banking, Banking jobs, software jobs in india, Banking jobs in india " 
+            href="http://jobsearch.monsterindia.com/category/categories.html?id=2">Banking</A><BR><A 
+            title="jobs in Construction, Construction jobs, software jobs in india, Construction jobs in india " 
+            href="http://jobsearch.monsterindia.com/category/categories.html?id=786">Construction</A><BR><A 
+            title="jobs in Distribution &amp; Delivery, Distribution &amp; Delivery jobs, software jobs in india, Distribution &amp; Delivery jobs in india " 
+            href="http://jobsearch.monsterindia.com/category/categories.html?id=4">Distribution 
+            &amp; Delivery</A><BR><A 
+            title="jobs in Entertainment &amp; Media, Entertainment &amp; Media jobs, software jobs in india, Entertainment &amp; Media jobs in india " 
+            href="http://jobsearch.monsterindia.com/category/categories.html?id=5">Entertainment 
+            &amp; Media</A><BR><A 
+            title="jobs in Export/Import, Export/Import jobs, software jobs in india, Export/Import jobs in india " 
+            href="http://jobsearch.monsterindia.com/category/categories.html?id=6">Export/Import</A><BR><A 
+            title="jobs in Financial Services, Financial Services jobs, software jobs in india, Financial Services jobs in india " 
+            href="http://jobsearch.monsterindia.com/category/categories.html?id=8">Financial 
+            Services</A></TD>
+          <TD style="LINE-HEIGHT: 17px" vAlign=top noWrap><A 
+            title="jobs in HR &amp; Admin, HR &amp; Admin jobs, software jobs in india, HR &amp; Admin jobs in india " 
+            href="http://jobsearch.monsterindia.com/category/categories.html?id=11">HR 
+            &amp; Admin</A><BR><A 
+            title="jobs in Health Care, Health Care jobs, software jobs in india, Health Care jobs in india " 
+            href="http://jobsearch.monsterindia.com/category/categories.html?id=9">Health 
+            Care</A><BR><A 
+            title="jobs in Hotels &amp; Restaurants, Hotels &amp; Restaurants jobs, software jobs in india, Hotels &amp; Restaurants jobs in india " 
+            href="http://jobsearch.monsterindia.com/category/categories.html?id=10">Hotels 
+            &amp; Restaurants</A><BR><A 
+            title="jobs in Insurance, Insurance jobs, software jobs in india, Insurance jobs in india " 
+            href="http://jobsearch.monsterindia.com/category/categories.html?id=12">Insurance</A><BR><A 
+            title="jobs in Legal, Legal jobs, software jobs in india, Legal jobs in india " 
+            href="http://jobsearch.monsterindia.com/category/categories.html?id=13">Legal</A><BR><A 
+            title="jobs in Oil &amp; Gas, Oil &amp; Gas jobs, software jobs in india, Oil &amp; Gas jobs in india " 
+            href="http://jobsearch.monsterindia.com/category/categories.html?id=785">Oil 
+            &amp; Gas</A><BR><A 
+            title="jobs in Others, Others jobs, software jobs in india, Others jobs in india " 
+            href="http://jobsearch.monsterindia.com/category/categories.html?id=15">Others</A></TD>
+          <TD style="LINE-HEIGHT: 17px" vAlign=top noWrap><A 
+            title="jobs in Pharma &amp; Biotech, Pharma &amp; Biotech jobs, software jobs in india, Pharma &amp; Biotech jobs in india " 
+            href="http://jobsearch.monsterindia.com/category/categories.html?id=16">Pharma 
+            &amp; Biotech</A><BR><A 
+            title="jobs in Purchase &amp; Supply Chain, Purchase &amp; Supply Chain jobs, software jobs in india, Purchase &amp; Supply Chain jobs in india " 
+            href="http://jobsearch.monsterindia.com/category/categories.html?id=18">Purchase 
+            &amp; Supply Chain</A><BR><A 
+            title="jobs in Real Estate/Property, Real Estate/Property jobs, software jobs in india, Real Estate/Property jobs in india " 
+            href="http://jobsearch.monsterindia.com/category/categories.html?id=908">Real 
+            Estate/Property</A><BR><A 
+            title="jobs in Retail Chains/Shops, Retail Chains/Shops jobs, software jobs in india, Retail Chains/Shops jobs in india " 
+            href="http://jobsearch.monsterindia.com/category/categories.html?id=19">Retail 
+            Chains/Shops</A><BR><A 
+            title="jobs in Senior Management, Senior Management jobs, software jobs in india, Senior Management jobs in india " 
+            href="http://jobsearch.monsterindia.com/category/categories.html?id=21">Senior 
+            Management</A><BR><A 
+            title="jobs in Telecom &amp; ISP, Telecom &amp; ISP jobs, software jobs in india, Telecom &amp; ISP jobs in india " 
+            href="http://jobsearch.monsterindia.com/category/telecommunication.html">Telecom 
+            &amp; ISP</A><BR><A 
+            title="jobs in Travel &amp; Airlines, Travel &amp; Airlines jobs, software jobs in india, Travel &amp; Airlines jobs in india " 
+            href="http://jobsearch.monsterindia.com/category/categories.html?id=24">Travel 
+            &amp; Airlines</A></TD></TR></TBODY></TABLE>
+      <TABLE id=location1 style="DISPLAY: none" cellSpacing=0 cellPadding=5 
+      width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class=bold 
+          style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; LINE-HEIGHT: 18px; PADDING-TOP: 0px" 
+          vAlign=top align=middle><IMG height=1 src="home_files/trans.gif" 
+            width=9></TD>
+          <TD class=bold style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 17px" 
+          vAlign=top width="33%"><A title="Jobs in Ahmedabad, Ahmedabad Jobs" 
+            href="http://jobsearch.monsterindia.com/location/ahemdabad.html">Ahmedabad</A><BR><A 
+            title="Jobs in Bangalore, Bangalore Jobs" 
+            href="http://jobsearch.monsterindia.com/location/bangalore.html">Bangalore</A><BR><A 
+            title="Jobs in Chandigarh, Chandigarh Jobs" 
+            href="http://jobsearch.monsterindia.com/location/chandigarh.html">Chandigarh</A></TD>
+          <TD class=bold style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 17px" 
+          vAlign=top width="33%"><A title="Jobs in Chennai, Chennai Jobs" 
+            href="http://jobsearch.monsterindia.com/location/chennai.html">Chennai</A><BR><A 
+            title="Jobs in Delhi, Delhi Jobs" 
+            href="http://jobsearch.monsterindia.com/location/delhi.html">Delhi</A><BR><A 
+            title="Jobs in Hyderabad, Hyderabad Jobs" 
+            href="http://jobsearch.monsterindia.com/location/hyderabad.html">Hyderabad</A></TD>
+          <TD class=bold style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 17px" 
+          vAlign=top width="33%"><A title="Jobs in Kolkata, Kolkata Jobs" 
+            href="http://jobsearch.monsterindia.com/location/kolkata.html">Kolkata</A><BR><A 
+            title="Jobs in Mumbai, Mumbai Jobs" 
+            href="http://jobsearch.monsterindia.com/location/mumbai.html">Mumbai</A><BR><A 
+            title="Jobs in Pune, Pune Jobs" 
+            href="http://jobsearch.monsterindia.com/location/pune.html">Pune</A></TD></TR>
+        <TR>
+          <TD class=bold 
+          style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; LINE-HEIGHT: 18px; PADDING-TOP: 0px" 
+          vAlign=top align=middle><IMG height=1 src="home_files/trans.gif" 
+            width=9></TD>
+          <TD style="LINE-HEIGHT: 17px" vAlign=top><A 
+            title="Jobs in Aurangabad, Aurangabad Jobs" 
+            href="http://jobsearch.monsterindia.com/searchresult.html?loc=23">Aurangabad</A><BR><A 
+            title="Jobs in Baroda, Baroda Jobs" 
+            href="http://jobsearch.monsterindia.com/searchresult.html?loc=26">Baroda</A><BR><A 
+            title="Jobs in Bhubaneshwar, Bhubaneshwar Jobs" 
+            href="http://jobsearch.monsterindia.com/searchresult.html?loc=34">Bhubaneshwar</A><BR><A 
+            title="Jobs in Coimbatore, Coimbatore Jobs" 
+            href="http://jobsearch.monsterindia.com/searchresult.html?loc=41">Coimbatore</A><BR><A 
+            title="Jobs in Goa, Goa Jobs" 
+            href="http://jobsearch.monsterindia.com/searchresult.html?loc=58">Goa</A><BR><A 
+            title="Jobs in Gurgaon, Gurgaon Jobs" 
+            href="http://jobsearch.monsterindia.com/searchresult.html?loc=5">Gurgaon</A></TD>
+          <TD style="LINE-HEIGHT: 17px" vAlign=top><A 
+            title="Jobs in Indore, Indore Jobs" 
+            href="http://jobsearch.monsterindia.com/searchresult.html?loc=69">Indore</A><BR><A 
+            title="Jobs in Jaipur, Jaipur Jobs" 
+            href="http://jobsearch.monsterindia.com/searchresult.html?loc=72">Jaipur</A><BR><A 
+            title="Jobs in Kochi, Kochi Jobs" 
+            href="http://jobsearch.monsterindia.com/searchresult.html?loc=87">Kochi</A><BR><A 
+            title="Jobs in Ludhiana, Ludhiana Jobs" 
+            href="http://jobsearch.monsterindia.com/searchresult.html?loc=98">Ludhiana</A><BR><A 
+            title="Jobs in Mysore, Mysore Jobs" 
+            href="http://jobsearch.monsterindia.com/searchresult.html?loc=105">Mysore</A><BR><A 
+            title="Jobs in Nagpur, Nagpur Jobs" 
+            href="http://jobsearch.monsterindia.com/searchresult.html?loc=107">Nagpur</A></TD>
+          <TD style="LINE-HEIGHT: 17px" vAlign=top><A 
+            title="Jobs in Nasik, Nasik Jobs" 
+            href="http://jobsearch.monsterindia.com/searchresult.html?loc=108">Nasik</A><BR><A 
+            title="Jobs in Noida, Noida Jobs" 
+            href="http://jobsearch.monsterindia.com/searchresult.html?loc=9">Noida</A><BR><A 
+            title="Jobs in Surat, Surat Jobs" 
+            href="http://jobsearch.monsterindia.com/searchresult.html?loc=138">Surat</A><BR><A 
+            title="Jobs in Tiruvananthapuram, Tiruvananthapuram Jobs" 
+            href="http://jobsearch.monsterindia.com/searchresult.html?loc=143">Tiruvananthapuram</A><BR><A 
+            title="Jobs in Visakhapatnam, Visakhapatnam Jobs" 
+            href="http://jobsearch.monsterindia.com/searchresult.html?loc=154">Visakhapatnam</A><BR>
+            <DIV style="TEXT-ALIGN: left"><A class=bold 
+            title="Jobs in India, jobs in kolkata, jobs in Indian cities" 
+            href="http://jobsearch.monsterindia.com/location/index.html">more 
+            <SPAN class=bold>»</SPAN></A></DIV></TD></TD></TR></TBODY></TABLE></TD>
+    <TD width=8>&nbsp;</TD>
+    <TD width=8>&nbsp;</TD>
+    <TD vAlign=top width=186>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD width=7><IMG 
+            style="BACKGROUND: url(http://media.monsterindia.com/v2/seeker/main_imgs.gif) no-repeat -207px top" 
+            height=22 src="home_files/trans.gif" width=7></TD>
+          <TD 
+          style="BACKGROUND: url(http://media.monsterindia.com/v2/seeker/all_bgs.gif) repeat-x left -295px; PADDING-TOP: 3px" 
+          vAlign=top>
+            <DIV class="bold txt_white" 
+            style="FLOAT: left; WIDTH: 30px">Employers</DIV>
+            <DIV style="FLOAT: right; WIDTH: 60px"><A class=txt_white 
+            title="Post Job, Access Resume Database, Find Resumes" 
+            style="TEXT-DECORATION: underline" 
+            href="http://recruiter.monsterindia.com/index.html">Login 
+            here</A></DIV></TD>
+          <TD width=7><IMG 
+            style="BACKGROUND: url(http://media.monsterindia.com/v2/seeker/main_imgs.gif) no-repeat -217px top" 
+            height=22 src="home_files/trans.gif" width=7></TD></TR></TBODY></TABLE>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD 
+          style="PADDING-LEFT: 21px; BACKGROUND: url(http://media.monsterindia.com/v2/seeker/emaployer_bg.jpg) left top" 
+          height=87><SPAN class=bold>Looking to Hire?</SPAN><BR><SPAN 
+            class=txt_blue>»</SPAN> <A title="post a job" 
+            href="http://recruiter.monsterindia.com/ecom/more_products.html">Post 
+            Jobs</A><BR><SPAN class=txt_blue>»</SPAN> <A 
+            title="make your resume viewable" 
+            href="http://recruiter.monsterindia.com/ecom/more_products.html">Search 
+            Resumes</A><BR><SPAN class=txt_blue>»</SPAN> <A 
+            title="Buy Job Posting, Search Resumes instantly" 
+            href="http://www.monsterindia.com/intermediate.html">Buy 
+            Online</A><BR><IMG height=7 src="home_files/trans.gif" 
+            width=1><BR><A class=bold title="Contact Us" 
+            href="http://recruiter.monsterindia.com/index.html">Contact Us 
+          »</A></TD></TR></TBODY></TABLE><BR><IMG height=5 
+      src="home_files/trans.gif" width=1><BR>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD width=7><IMG 
+            style="BACKGROUND: url(http://media.monsterindia.com/v2/seeker/main_imgs.gif) no-repeat -207px -24px" 
+            height=22 src="home_files/trans.gif" width=7></TD>
+          <TD 
+          style="BACKGROUND: url(http://media.monsterindia.com/v2/seeker/all_bgs.gif) repeat-x left -320px; PADDING-TOP: 3px" 
+          vAlign=top>
+            <DIV class="bold txt_white" style="FLOAT: left; WIDTH: 80px">Job 
+            Seekers </DIV>
+            <DIV style="FLOAT: right; WIDTH: 60px"><A class=txt_white 
+            title="apply for job, apply job online" 
+            style="TEXT-DECORATION: underline" 
+            href="http://my.monsterindia.com/login.html">Login here</A></DIV></TD>
+          <TD width=7><IMG 
+            style="BACKGROUND: url(http://media.monsterindia.com/v2/seeker/main_imgs.gif) no-repeat -217px -24px" 
+            height=22 src="home_files/trans.gif" width=7></TD></TR></TBODY></TABLE>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD 
+          style="BACKGROUND: url(http://media.monsterindia.com/v2/seeker/jobseeker_bg.jpg) no-repeat left top" 
+          vAlign=top height=171>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD vAlign=bottom align=middle height=70><IMG height=35 
+                  src="home_files/double_yourchances.gif" width=139></TD></TR>
+              <TR>
+                <TD vAlign=bottom align=middle height=32><A 
+                  href="http://my.monsterindia.com/create_account.html"><IMG 
+                  title="Register Free, Job opportunities in India" height=25 
+                  src="home_files/submit_resume.gif" width=111 
+              border=0></A></TD></TR>
+              <TR>
+                <TD class=bold vAlign=bottom align=middle height=50>New User? 
+                  <A title="Register Free, Job opportunities in India" 
+                  href="http://my.monsterindia.com/create_account.html">Register 
+                  Now</A></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><BR><IMG 
+      height=5 src="home_files/trans.gif" width=1><BR>
+      <TABLE style="MARGIN-TOP: 2px" cellSpacing=0 cellPadding=0 width="100%" 
+      border=0>
+        <TBODY>
+        <TR>
+          <TD class=border_orange 
+          style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px" 
+            height=19><A class="bold txt_orange" 
+            href="http://content.monsterindia.com/index.html">Find the Right Job 
+            Faster </A></TD></TR>
+        <TR>
+          <TD 
+          style="PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; LINE-HEIGHT: 18px; PADDING-TOP: 5px" 
+          height=19>» <A title="Resume services, Salary tips" 
+            href="http://expressresume.monsterindia.com/index.html">XpressResume+</A><BR>» 
+            <A 
+            title="Resume services, Career advice, Guide on CV preparation, Salary tips" 
+            href="http://resumeservice.monsterindia.com/index.html">Right 
+            Resume</A><BR>» <A title="Guide on CV preparation, Salary tips" 
+            href="http://careerbooster.monsterindia.com/index.html">Career 
+            Booster</A><BR>» <A 
+            title="Resume services, Guide on CV preparation, Salary tips" 
+            href="http://www.monsterindia.com/resume_highlighter/index.html">Resume 
+            Highlighter</A><BR>» <A title="Psychometric Test" 
+            href="http://www.monsterindia.com/psychometrictest/index.html">Psychometric 
+            Test</A><BR>» <A title="Career advice, job career" 
+            href="http://www.monsterindia.com/career_astrology/index.html">Career 
+            Astrology</A><BR></TD></TR>
+        <TR>
+          <TD class=border_orange 
+          style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; PADDING-TOP: 15px" 
+          height=19><A class="bold txt_orange" style="TEXT-DECORATION: none" 
+            href="http://content.monsterindia.com/index.html">Browse 
+        Jobs</A></TD></TR>
+        <TR>
+          <TD 
+          style="PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; LINE-HEIGHT: 18px; PADDING-TOP: 5px" 
+          height=19>» <A 
+            title="Jobs in Reliance, ICICI, Genpact, Airtel, Infosys, Wipro, Microsoft" 
+            href="http://company.monsterindia.com/index.html">Companies</A><BR>» 
+            <A 
+            title="Placement Consultants, IT Placement Consultants, Placement Consultants Delhi, Placement Consultants Mumbai" 
+            href="http://pa.monsterindia.com/">Placement Consultants 
+        </A></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE id=choice cellSpacing=0 cellPadding=0 width=755 align=center border=0>
+  <TBODY>
+  <TR>
+    <TD class=border_orange 
+    style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px" width=9><IMG 
+      height=1 src="home_files/trans.gif" width=9></TD>
+    <TD class="border_orange bg_orange1" onmouseover=eventOnSwitchTab(0) 
+    style="BORDER-BOTTOM: 0px" align=middle width=150 height=19>Employers of 
+      Choice </TD>
+    <TD class=border_orange 
+    style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px" width=9><IMG 
+      height=1 src="home_files/trans.gif" width=11></TD>
+    <TD class=border_orange 
+    style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px" width=9><IMG 
+      height=1 src="home_files/trans.gif" width=11></TD>
+    <TD class=border_orange 
+    style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px" width=9><IMG 
+      height=1 src="home_files/trans.gif" width=11></TD>
+    <TD class=border_orange 
+    style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px">&nbsp;</TD></TR></TBODY></TABLE>
+<TABLE id=choice1 cellSpacing=0 cellPadding=0 width=755 align=center border=0>
+  <TBODY>
+  <TR>
+    <TD align=middle>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" align=center>
+        <TBODY>
+        <TR>
+          <TD vAlign=top align=middle colSpan=3><A 
+            href="http://www.monsterindia.com/tracker.html?banner_id=Front8681&amp;url=http%3A%2F%2Fjobsearch.monsterindia.com%2Fsearchresult.html%3Ffts%3Dxgoogleindiainx%26amp%3Bac%3D%26amp%3Bx%3D0%26amp%3By%3D0" 
+            target=_blank><IMG height=31 hspace=10 
+            src="home_files/1Google_88x31.gif" width=88 vspace=10 
+          border=0></A></TD>
+          <TD vAlign=top align=middle colSpan=3><A 
+            href="http://www.monsterindia.com/tracker.html?banner_id=Front8628&amp;url=http%3A%2F%2Fjobsearch.monsterindia.com%2Fsearchresult.html%3Fcid%3D3299%3Blan%3D1" 
+            target=_blank><IMG height=31 hspace=10 src="home_files/52994.gif" 
+            width=88 vspace=10 border=0></A></TD>
+          <TD vAlign=top align=middle colSpan=3><A 
+            href="http://www.monsterindia.com/tracker.html?banner_id=Front9192&amp;url=http%3A%2F%2Fcompany.monsterindia.com%2Fyahooin%2F" 
+            target=_blank><IMG height=31 hspace=10 
+            src="home_files/yahoo_88x31.gif" width=88 vspace=10 border=0></A></TD>
+          <TD vAlign=top align=middle colSpan=3><A 
+            href="http://www.monsterindia.com/tracker.html?banner_id=Front8658&amp;url=http%3A%2F%2Fcompany.monsterindia.com%2Fsapient%2Findex.html" 
+            target=_blank><IMG height=31 hspace=10 
+            src="home_files/Sapient_Logo.gif" width=88 vspace=10 
+border=0></A></TD>
+          <TD vAlign=top align=middle colSpan=3><A 
+            href="http://www.monsterindia.com/tracker.html?banner_id=Front9146&amp;url=http%3A%2F%2Fcompany.monsterindia.com%2Fsungardin%2Findex.html" 
+            target=_blank><IMG height=31 hspace=10 src="home_files/27774.gif" 
+            width=88 vspace=10 border=0></A></TD>
+          <TD vAlign=top align=middle colSpan=3><A 
+            href="http://www.monsterindia.com/tracker.html?banner_id=Front9262&amp;url=http%3A%2F%2Fjobsearch.monsterindia.com%2Fsearchresult.html%3Fcid%3D26147%3Blan%3D1" 
+            target=_blank><IMG height=31 hspace=10 
+            src="home_files/amdocs1_88x31.gif" width=88 vspace=10 
+          border=0></A></TD></TR>
+        <TR>
+          <TD vAlign=top align=middle colSpan=3><A 
+            href="http://www.monsterindia.com/tracker.html?banner_id=Front9169&amp;url=http%3A%2F%2Fjobsearch.monsterindia.com%2Fsearchresult.html%3Fcid%3D43062%3Blan%3D1" 
+            target=_blank><IMG height=31 hspace=10 src="home_files/36395.gif" 
+            width=88 vspace=10 border=0></A></TD>
+          <TD vAlign=top align=middle colSpan=3><A 
+            href="http://www.monsterindia.com/tracker.html?banner_id=Front9299&amp;url=http%3A%2F%2Fjobsearch.monsterindia.com%2Fsearchresult.html%3Ffts%3Dxcmscominx%26amp%3Bac%3D%26amp%3Bx%3D34%26amp%3By%3D12" 
+            target=_blank><IMG height=31 hspace=10 
+            src="home_files/cms_88x31_with.gif" width=88 vspace=10 
+          border=0></A></TD>
+          <TD vAlign=top align=middle colSpan=3><A 
+            href="http://www.monsterindia.com/tracker.html?banner_id=Front9312&amp;url=http%3A%2F%2Fwww.ge.com%2Fcareers" 
+            target=_blank><IMG height=31 hspace=10 
+            src="home_files/ge_88x31_with.gif" width=88 vspace=10 
+          border=0></A></TD>
+          <TD vAlign=top align=middle colSpan=3><A 
+            href="http://www.monsterindia.com/tracker.html?banner_id=Front9307&amp;url=http%3A%2F%2Fcompany.monsterindia.com%2Fwilcoin%2F" 
+            target=_blank><IMG height=31 hspace=10 src="home_files/55959.gif" 
+            width=88 vspace=10 border=0></A></TD>
+          <TD vAlign=top align=middle colSpan=3><A 
+            href="http://www.monsterindia.com/tracker.html?banner_id=Front9182&amp;url=http%3A%2F%2Fjobsearch.monsterindia.com%2Fsearchresult.html%3Ffts%3Dxredhatdex%26amp%3Bac%3D%26amp%3Bx%3D26%26amp%3By%3D12" 
+            target=_blank><IMG height=31 hspace=10 src="home_files/14671.gif" 
+            width=88 vspace=10 border=0></A></TD>
+          <TD vAlign=top align=middle colSpan=3><A 
+            href="http://www.monsterindia.com/tracker.html?banner_id=Front9313&amp;url=http%3A%2F%2Fjobsearch.monsterindia.com%2Fsearchresult.html%3Ffts%3Dxaptechinx%26amp%3Bac%3D%26amp%3Bx%3D25%26amp%3By%3D21" 
+            target=_blank><IMG height=31 hspace=10 src="home_files/32717.gif" 
+            width=88 vspace=10 border=0></A></TD></TR>
+        <TR>
+          <TD vAlign=top align=middle colSpan=3><A 
+            href="http://www.monsterindia.com/tracker.html?banner_id=Front9308&amp;url=http%3A%2F%2Fjobsearch.monsterindia.com%2Fsearchresult.html%3Fcid%3D95085%3Blan%3D1" 
+            target=_blank><IMG height=31 hspace=10 
+            src="home_files/vinculum_88x31.gif" width=88 vspace=10 
+          border=0></A></TD>
+          <TD vAlign=top align=middle colSpan=3><A 
+            href="http://www.monsterindia.com/tracker.html?banner_id=Front9309&amp;url=http%3A%2F%2Fjobsearch.monsterindia.com%2Fsearchresult.html%3Fcid%3D95320%3Blan%3D1" 
+            target=_blank><IMG height=31 hspace=10 
+            src="home_files/advancegroup_88x31.gif" width=88 vspace=10 
+            border=0></A></TD>
+          <TD vAlign=top align=middle colSpan=3><A 
+            href="http://www.monsterindia.com/tracker.html?banner_id=Front9311&amp;url=http%3A%2F%2Fjobsearch.monsterindia.com%2Fsearchresult.html%3Fcid%3D2787%3Blan%3D1" 
+            target=_blank><IMG height=31 hspace=10 
+            src="home_files/thomsoms_88x31.gif" width=88 vspace=10 
+          border=0></A></TD>
+          <TD vAlign=top align=middle colSpan=3><A 
+            href="http://www.monsterindia.com/tracker.html?banner_id=Front9305&amp;url=http%3A%2F%2Fcompany.monsterindia.com%2Fmastekltdin%2Findex.html" 
+            target=_blank><IMG height=31 hspace=10 
+            src="home_files/mastek_88x31_with.gif" width=88 vspace=10 
+            border=0></A></TD>
+          <TD vAlign=top align=middle colSpan=3><A 
+            href="http://www.monsterindia.com/tracker.html?banner_id=Front9310&amp;url=http%3A%2F%2Fjobsearch.monsterindia.com%2Fsearchresult.html%3Fcid%3D56155%3Blan%3D1" 
+            target=_blank><IMG height=31 hspace=10 
+            src="home_files/ust_88x31.gif" width=88 vspace=10 border=0></A></TD>
+          <TD vAlign=top align=middle colSpan=3><A 
+            href="http://www.monsterindia.com/tracker.html?banner_id=Front9303&amp;url=http%3A%2F%2Fjobsearch.monsterindia.com%2Fsearchresult.html%3Ffts%3Dxscbankinx%26amp%3Bac%3D%26amp%3Bx%3D38%26amp%3By%3D8" 
+            target=_blank><IMG height=31 hspace=10 
+            src="home_files/stabdard_88x31_with.gif" width=88 vspace=10 
+            border=0></A></TD></TR>
+        <TR>
+          <TD vAlign=top align=middle colSpan=3><A 
+            href="http://www.monsterindia.com/tracker.html?banner_id=Front9301&amp;url=http%3A%2F%2Fjobsearch.monsterindia.com%2Fsearchresult.html%3Ffts%3Dxgtlinx%26amp%3Bac%3D%26amp%3Bx%3D22%26amp%3By%3D13" 
+            target=_blank><IMG height=31 hspace=10 
+            src="home_files/gtl_88x31_with.gif" width=88 vspace=10 
+          border=0></A></TD>
+          <TD vAlign=top align=middle colSpan=3><A 
+            href="http://www.monsterindia.com/tracker.html?banner_id=Front9302&amp;url=http%3A%2F%2Fjobsearch.monsterindia.com%2Fsearchresult.html%3Ffts%3Dxncrinx%26amp%3Bac%3D%26amp%3Bx%3D41%26amp%3By%3D6" 
+            target=_blank><IMG height=31 hspace=10 
+            src="home_files/ncr_88x31_with.gif" width=88 vspace=10 
+          border=0></A></TD>
+          <TD vAlign=top align=middle colSpan=3><A 
+            href="http://www.monsterindia.com/tracker.html?banner_id=Front9297&amp;url=http%3A%2F%2Fcompany.monsterindia.com%2Febay%2Findex.html" 
+            target=_blank><IMG height=31 hspace=10 
+            src="home_files/ebay_88x31_with.gif" width=88 vspace=10 
+          border=0></A></TD>
+          <TD vAlign=top align=middle colSpan=3><A 
+            href="http://www.monsterindia.com/tracker.html?banner_id=Front9289&amp;url=http%3A%2F%2Fjobsearch.monsterindia.com%2Fsearchresult.html%3Fcid%3D723%3Blan%3D1" 
+            target=_blank><IMG height=31 hspace=10 src="home_files/90941.gif" 
+            width=88 vspace=10 border=0></A></TD>
+          <TD vAlign=top align=middle colSpan=3><A 
+            href="http://www.monsterindia.com/tracker.html?banner_id=Front8678&amp;url=http%3A%2F%2Fjobsearch.monsterindia.com%2Fsearchresult.html%3Fcid%3D26252%3Blan%3D1" 
+            target=_blank><IMG height=31 hspace=10 
+            src="home_files/capgemini_88x31_with.gif" width=88 vspace=10 
+            border=0></A></TD>
+          <TD vAlign=top align=middle colSpan=3><A 
+            href="http://www.monsterindia.com/tracker.html?banner_id=Front9304&amp;url=http%3A%2F%2Fjobsearch.monsterindia.com%2Fsearchresult.html%3Ffts%3Dxteradatainx%26amp%3Bac%3D%26amp%3Bx%3D49%26amp%3By%3D9" 
+            target=_blank><IMG height=31 hspace=10 
+            src="home_files/teradata_88x31_with.gif" width=88 vspace=10 
+            border=0></A></TD></TR>
+        <TR>
+          <TD vAlign=top align=middle colSpan=3><A 
+            href="http://www.monsterindia.com/tracker.html?banner_id=Front9246&amp;url=http%3A%2F%2Fcompany.monsterindia.com%2Flntin%2F" 
+            target=_blank><IMG height=31 hspace=10 src="home_files/30145.gif" 
+            width=88 vspace=10 border=0></A></TD>
+          <TD vAlign=top align=middle colSpan=3><A 
+            href="http://www.monsterindia.com/tracker.html?banner_id=Front8647&amp;url=http%3A%2F%2Fcompany.monsterindia.com%2Fhewlettpackin%2Findex.html" 
+            target=_blank><IMG height=31 hspace=10 src="home_files/15921.gif" 
+            width=88 vspace=10 border=0></A></TD>
+          <TD vAlign=top align=middle colSpan=3><A 
+            href="http://www.monsterindia.com/tracker.html?banner_id=Front8629&amp;url=http%3A%2F%2Fcompany.monsterindia.com%2Finfinitecsin%2Findex.html" 
+            target=_blank><IMG height=31 hspace=10 
+            src="home_files/88x31_infinite.gif" width=88 vspace=10 
+          border=0></A></TD>
+          <TD vAlign=top align=middle colSpan=3><A 
+            href="http://www.monsterindia.com/tracker.html?banner_id=Front8813&amp;url=http%3A%2F%2Fcompany.monsterindia.com%2Fpatniin%2Findex.html" 
+            target=_blank><IMG height=31 hspace=10 
+            src="home_files/patni_88x31.jpg" width=88 vspace=10 border=0></A></TD>
+          <TD vAlign=top align=middle colSpan=3><A 
+            href="http://www.monsterindia.com/tracker.html?banner_id=Front8884&amp;url=http%3A%2F%2Fwww.rbs.jobs%2Ffe%2Ftpl_RBSIndia.asp%3Fnewms%3Dse" 
+            target=_blank><IMG height=31 hspace=10 src="home_files/RBS-Logo.gif" 
+            width=88 vspace=10 
+border=0></A></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE id=video style="DISPLAY: none" cellSpacing=0 cellPadding=0 width=755 
+align=center border=0>
+  <TBODY>
+  <TR>
+    <TD class=border_orange 
+    style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px" width=9><IMG 
+      height=1 src="home_files/trans.gif" width=9></TD>
+    <TD class="border_orange bg_orange2" 
+    onmouseover="MJS.HTML.opsOnTags({HIDE_IDS:['consultant', 'consultant1','video','video1','blog','blog1'], SHOW_IDS:['choice', 'choice1']}); eventOnSwitchTab(0);" 
+    style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; CURSOR: pointer" 
+    align=middle width=150 height=19>Employers of Choice </TD>
+    <TD class=border_orange 
+    style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px" width=9><IMG 
+      height=1 src="home_files/trans.gif" width=11></TD>
+    <TD class=border_orange 
+    style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px" width=9><IMG 
+      height=1 src="home_files/trans.gif" width=11></TD>
+    <TD class=border_orange 
+    style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px" width=9><IMG 
+      height=1 src="home_files/trans.gif" width=11></TD>
+    <TD class=border_orange 
+    style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px">&nbsp;</TD></TR></TBODY></TABLE>
+<TABLE id=video1 style="DISPLAY: none" cellSpacing=0 cellPadding=0 width=755 
+align=center border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top width=153></TD></TR></TBODY></TABLE>
+<TABLE id=blog style="DISPLAY: none" cellSpacing=0 cellPadding=0 width=755 
+align=center border=0>
+  <TBODY>
+  <TR>
+    <TD class=border_orange 
+    style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px" width=9><IMG 
+      height=1 src="home_files/trans.gif" width=9></TD>
+    <TD class="border_orange bg_orange2" 
+    onmouseover="MJS.HTML.opsOnTags({HIDE_IDS:['blog', 'blog1','video','video1','consultant','consultant1'], SHOW_IDS:['choice', 'choice1']}); eventOnSwitchTab(0);" 
+    style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; CURSOR: pointer" 
+    align=middle width=150 height=19>Employers of Choice </TD>
+    <TD class=border_orange 
+    style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px" width=9><IMG 
+      height=1 src="home_files/trans.gif" width=11></TD>
+    <TD class=border_orange 
+    style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px" width=9><IMG 
+      height=1 src="home_files/trans.gif" width=11></TD>
+    <TD class=border_orange 
+    style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px" width=9><IMG 
+      height=1 src="home_files/trans.gif" width=11></TD>
+    <TD class=border_orange 
+    style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px">&nbsp;</TD></TR></TBODY></TABLE>
+<TABLE id=blog1 style="DISPLAY: none" cellSpacing=0 cellPadding=0 width=755 
+align=center border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top width=153></TD></TR></TBODY></TABLE>
+<TABLE id=consultant style="DISPLAY: none" cellSpacing=0 cellPadding=0 width=755 
+align=center border=0>
+  <TBODY>
+  <TR>
+    <TD class=border_orange 
+    style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px" width=9><IMG 
+      height=1 src="home_files/trans.gif" width=9></TD>
+    <TD class="border_orange bg_orange2" 
+    onmouseover="MJS.HTML.opsOnTags({HIDE_IDS:['blog', 'blog1','consultant','consultant1','video','video1'], SHOW_IDS:['choice', 'choice1']}); eventOnSwitchTab(0);" 
+    style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; CURSOR: pointer" 
+    align=middle width=150 height=19>Employers of Choice </TD>
+    <TD class=border_orange 
+    style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px" width=9><IMG 
+      height=1 src="home_files/trans.gif" width=11></TD>
+    <TD class=border_orange 
+    style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px" width=9><IMG 
+      height=1 src="home_files/trans.gif" width=11></TD>
+    <TD class=border_orange 
+    style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px" width=9><IMG 
+      height=1 src="home_files/trans.gif" width=11></TD>
+    <TD class=border_orange 
+    style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px">&nbsp;</TD></TR></TBODY></TABLE>
+<TABLE id=consultant1 style="DISPLAY: none" cellSpacing=0 cellPadding=0 
+width=755 align=center border=0>
+  <TBODY>
+  <TR>
+    <TD></TD></TR></TBODY></TABLE><BR><BR>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD 
+    style="BACKGROUND: url(http://media.monsterindia.com/v2/seeker/bottom_bg.gif) repeat-x left top" 
+    align=middle><IMG height=19 hspace=0 src="home_files/bottomcurve_2.gif" 
+      width=14 align=right><IMG height=19 hspace=0 
+      src="home_files/bottomcurve_1.gif" width=8 align=left></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD 
+    style="PADDING-RIGHT: 15px; PADDING-LEFT: 15px; PADDING-BOTTOM: 10px; LINE-HEIGHT: 16px; PADDING-TOP: 15px" 
+    vAlign=top align=right>
+      <TABLE cellSpacing=0 cellPadding=0 width=728 align=center border=0>
+        <TBODY>
+        <TR>
+          <TD class=txt_blue style="LINE-HEIGHT: 12px" vAlign=bottom align=left 
+          width=25><IMG height=1 src="home_files/trans.gif" width=25></TD>
+          <TD class=txt_blue style="LINE-HEIGHT: 12px" vAlign=bottom align=left 
+          width=165 height=20><SPAN class="txt_orange bold" 
+            style="LINE-HEIGHT: 12px">For Jobseekers</SPAN></TD>
+          <TD class=txt_blue style="LINE-HEIGHT: 12px" vAlign=bottom align=left 
+          width=149><SPAN class=txt_blue style="LINE-HEIGHT: 12px"><SPAN 
+            class="txt_orange small">Jobs By Category</SPAN></SPAN></TD>
+          <TD class=txt_blue style="LINE-HEIGHT: 12px" vAlign=bottom align=left 
+          width=169><SPAN class=txt_blue style="LINE-HEIGHT: 12px"><SPAN 
+            class="txt_orange small">Jobs By Location</SPAN></SPAN></TD>
+          <TD class=txt_blue style="LINE-HEIGHT: 12px" vAlign=bottom align=left 
+          width=192><SPAN class=txt_blue style="LINE-HEIGHT: 12px"><SPAN 
+            class="txt_orange small">About Our Site </SPAN></SPAN></TD>
+          <TD class=txt_blue style="LINE-HEIGHT: 12px" vAlign=bottom align=left 
+          width=28><IMG height=1 src="home_files/trans.gif" width=25></TD></TR>
+        <TR>
+          <TD class="txt_grey small" style="LINE-HEIGHT: 14px; PADDING-TOP: 5px" 
+          align=left>&nbsp;</TD>
+          <TD class="txt_grey small" style="LINE-HEIGHT: 14px; PADDING-TOP: 5px" 
+          align=left width=165>› <A class=txt_grey 
+            href="http://www.monsterindia.com/" target=_parent>Home</A><BR>› <A 
+            class="txt_grey small" 
+            href="http://jobsearch.monsterindia.com/search.html" 
+            target=_parent>Search Jobs</A><BR>› <A class="txt_grey small" 
+            href="http://jobs.monsterindia.com/" target=_parent>View All 
+            Jobs</A><BR>› <A class="txt_grey small" 
+            href="http://www.monsterindia.com/monster-jobs.html" 
+            target=_parent>Monster Jobs</A><BR>› <A class="txt_grey small" 
+            href="http://my.monsterindia.com/create_account.html" 
+            target=_parent>Resume at Monster</A><BR>› <A class="txt_grey small" 
+            href="http://mobile.monsterindia.com/index.html" target=_parent>Jobs 
+            On Mobile</A><BR>› <A class="txt_grey small" 
+            href="http://my.monsterindia.com/manageagents.html" 
+            target=_parent>Get Jobs in Email</A><BR>› <A class="txt_grey small" 
+            href="http://company.monsterindia.com/index.html" 
+            target=_parent>Know About Companies</A><BR>› <A 
+            class="txt_grey small" 
+            href="http://my.monsterindia.com/my_monster.html" target=_parent>My 
+            Monster</A><BR>› <A class="txt_grey small" 
+            href="http://blog.monsterindia.com/" target=_parent>Blog</A><BR>› <A 
+            class="txt_grey small" 
+            href="http://content.monsterindia.com/index.html" 
+            target=_parent>Career Center</A><BR>› <A class="txt_grey small" 
+            href="http://www.monsterindia.com/help.html" 
+          target=_parent>Help</A></TD>
+          <TD class="txt_grey small" style="LINE-HEIGHT: 14px; PADDING-TOP: 5px" 
+          vAlign=top align=left width=149>› <A class="txt_grey small" 
+            href="http://jobsearch.monsterindia.com/category/sales.html" 
+            target=_parent>Sales Jobs in India</A><BR>› <A 
+            class="txt_grey small" 
+            href="http://jobsearch.monsterindia.com/category/it.html" 
+            target=_parent>IT Jobs in India</A><BR>› <A class="txt_grey small" 
+            href="http://jobsearch.monsterindia.com/category/it.html" 
+            target=_parent>Software Jobs in India</A><BR>› <A 
+            class="txt_grey small" 
+            href="http://jobsearch.monsterindia.com/category/finance.html" 
+            target=_parent>Finance Jobs in India</A><BR>› <A 
+            class="txt_grey small" 
+            href="http://jobsearch.monsterindia.com/category/production.html" 
+            target=_parent>Engineering Jobs</A><BR>› <A class="txt_grey small" 
+            href="http://company.monsterindia.com/company-jobs-a.html" 
+            target=_parent>Companies</A><BR>› <A class="txt_grey small" 
+            href="http://pa.monsterindia.com/index.html" 
+            target=_parent>Placement Consultants</A></TD>
+          <TD class="txt_grey small" style="LINE-HEIGHT: 14px; PADDING-TOP: 5px" 
+          vAlign=top align=left width=169>› <A class="txt_grey small" 
+            href="http://jobsearch.monsterindia.com/location/bangalore.html" 
+            target=_parent>Jobs in Bangalore</A><BR>› <A class="txt_grey small" 
+            href="http://jobsearch.monsterindia.com/location/chandigarh.html" 
+            target=_parent>Jobs in Chandigarh</A><BR>› <A class="txt_grey small" 
+            href="http://jobsearch.monsterindia.com/location/chennai.html" 
+            target=_parent>Chennai Jobs</A><BR>› <A class="txt_grey small" 
+            href="http://jobsearch.monsterindia.com/location/delhi.html" 
+            target=_parent>Delhi Jobs</A><BR>› <A class="txt_grey small" 
+            href="http://jobsearch.monsterindia.com/searchresult.html?loc=5" 
+            target=_parent>Jobs in Gurgaon</A><BR>› <A class="txt_grey small" 
+            href="http://jobsearch.monsterindia.com/location/hyderabad.html" 
+            target=_parent>Jobs in Hyderabad</A><BR>› <A class="txt_grey small" 
+            href="http://jobsearch.monsterindia.com/searchresult.html?loc=9" 
+            target=_parent>Jobs in Noida</A><BR>› <A class="txt_grey small" 
+            href="http://jobsearch.monsterindia.com/location/mumbai.html" 
+            target=_parent>Jobs in Mumbai</A><BR>› <A class="txt_grey small" 
+            href="http://jobsearch.monsterindia.com/location/pune.html" 
+            target=_parent>Jobs in Pune</A><BR>› <A class="txt_grey small" 
+            href="http://www.monsterindia.com/" target=_parent>Jobs in India</A> 
+            <BR>› <A class="txt_grey small" 
+            href="http://jobsearch.monsterindia.com/international_jobsearch.html" 
+            target=_parent>International Jobs </A></TD>
+          <TD class="txt_grey small" style="LINE-HEIGHT: 14px; PADDING-TOP: 5px" 
+          vAlign=top noWrap align=left>› <A class="txt_grey small" 
+            href="http://www.monsterindia.com/contact_us.html" 
+            target=_parent>Contact Us</A><BR>› <A class="txt_grey small" 
+            href="http://www.monsterindia.com/about_us.html" 
+            target=_parent>About Monster</A><BR>› <A class="txt_grey small" 
+            href="http://www.monsterindia.com/privacy.html" 
+            target=_parent>Privacy Commitment</A><BR>› <A class="txt_grey small" 
+            href="http://www.monsterindia.com/besafe.html" target=_parent>Be 
+            Safe</A><BR>› <A class="txt_grey small" 
+            href="http://www.monsterindia.com/terms_of_use.html" 
+            target=_parent>Terms of Use</A><BR>› <A class="txt_grey small" 
+            href="http://www.monsterindia.com/feedback.html" 
+            target=_parent>Report a Bug </A><BR>› <A class="txt_grey small" 
+            href="http://www.monsterindia.com/complaints.html" 
+            target=_parent>Complaint</A><BR>› <A class="txt_grey small" 
+            href="http://jobsearch.monsterindia.com/download_searchbox.html" 
+            target=_parent>Add Job Search Box to Your Site </A><BR>› <A 
+            class="txt_grey small" 
+            href="http://www.monsterindia.com/sitemap.html" 
+            target=_parent>Sitemap</A><BR>› <A class="txt_grey small" 
+            href="http://www.monsterindia.com/security/security_center.html" 
+            target=_parent>Fraud/Security</A><BR></TD>
+          <TD class="txt_grey small" style="LINE-HEIGHT: 14px; PADDING-TOP: 5px" 
+          vAlign=top align=left>&nbsp;</TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; LINE-HEIGHT: 16px; PADDING-TOP: 0px" 
+    vAlign=top align=right>
+      <TABLE cellSpacing=0 cellPadding=0 width="95%" align=center border=0>
+        <TBODY>
+        <TR>
+          <TD 
+          style="BACKGROUND: url(http://media.monsterindia.com/v2/seeker/divider_2.gif) repeat-x left top"><IMG 
+            height=2 src="home_files/divider_2.gif" width=2></TD></TR>
+        <TR>
+          <TD class="txt_grey small" 
+          style="PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; PADDING-TOP: 10px" 
+          align=middle><SPAN class=bold>For Employers:</SPAN> <A 
+            class="txt_grey small" href="http://recruiter.monsterindia.com/" 
+            target=_parent>Home</A> | <A class="txt_grey small" 
+            href="http://recruiter.monsterindia.com/ecom/" target=_parent>Buy 
+            Resume Database Access</A> | <A class="txt_grey small" 
+            href="http://recruiter.monsterindia.com/ecom/" target=_parent>Buy 
+            Job Postings</A> | <A class="txt_grey small" 
+            href="http://recruiter.monsterindia.com/index.html" 
+            target=_parent>Employer Login</A>&nbsp; </TD></TR>
+        <TR>
+          <TD class=small 
+          style="PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px" 
+          align=middle>© 2009 Monster - All Rights Reserved - U.S. Patent No. 
+            5,832,497 - NYSE: <A class=small 
+            href="http://www.monsterworldwide.com/" 
+            target=_parent>MWW</A><BR><SPAN class=bold>Toll free : 
+            1-800-4196666, +91-40-66116611 or <A class=small 
+            href="mailto:info@monsterindia.com">info@monsterindia.com</A></SPAN></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<SCRIPT src=""></SCRIPT>
+
+<SCRIPT>
+<!--
+var win1                = null;
+var ck   				= "PO";
+var domain              = ".monsterindia.com";
+var theURL              = "http://my.monsterindia.com/sponsered_popup.html";
+var winName             = "pop";
+var f            		= "top=25,left=25,menubar=no,location=no,toolbar=no,status=no,resizable=no"
+                          + ",statusbar=no,scrollbars=no,status=no,modal=no,width=595,height=539,resizable=no";
+var sck					= "Z";
+
+function decideAndOpen()
+{
+        if (! rck(ck))
+        { 		
+	        if (win1)
+            {
+                if(win1.closed) win1=window.open(theURL,winName,f);
+                else window.focus();
+            }
+            else
+            {
+                win1=window.open(theURL,winName,f);
+                window.focus();
+            }
+				document.cookie  = ck + "=" + 1 +  "; domain=" + domain + ";path=/";
+		}		
+}
+
+function rck(na)
+{
+    var n = na + "=";
+    var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++)
+        {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(n) == 0) return c.substring(n.length,c.length);
+        }
+        return null;
+}
+decideAndOpen();
+-->
+</SCRIPT>
+</FORM><MAP name=Map><AREA title="Know More" onclick=openwin() shape=RECT 
+  target=newin alt="Know More" coords=166,13,185,31 
+  href="http://my.monsterindia.com/help_videoresume.html"><AREA 
+  title="Upload video resume" shape=RECT coords=1,1,165,34 
+  href="http://my.monsterindia.com/create_account.html"></MAP></BODY></HTML>
